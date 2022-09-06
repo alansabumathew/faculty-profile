@@ -1,0 +1,221 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "degree": "BTECH",
+      "board": "Christ",
+      "year": "2020",
+      "result": "First Class",
+      "spec": "AIML"
+    }
+  ],
+  "comments": [],
+  "signup": [
+    {
+      "name": "Alan",
+      "email": "alan@mail.com",
+      "mobil": "",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "mobil": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "Sabu",
+      "email": "sabu@mail.com",
+      "mobil": "",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "name": "ruby@mail.com",
+      "email": "ruby@mail.com",
+      "mobil": "",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "teacher",
+      "email": "teacher@mail.com",
+      "mobile": "8904652571",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "names": "Alan",
+      "spec": "AIML",
+      "ins": "Christ",
+      "year": "2022-08-27",
+      "uni": "Christ",
+      "per": 69,
+      "id": 6
+    },
+    {
+      "names": "Alan",
+      "spec": "AIML",
+      "ins": "Christ",
+      "uni": "Christ",
+      "per": "",
+      "id": 7
+    },
+    {
+      "names": "Alan",
+      "spec": "AIML",
+      "ins": "Christ",
+      "uni": "Christ",
+      "id": 8
+    },
+    {
+      "names": "Alan",
+      "spec": "AIML",
+      "ins": "Christ",
+      "year": "",
+      "uni": "Christ",
+      "id": 9
+    },
+    {
+      "name": "satyajeet",
+      "email": "satya@gmail.com",
+      "mobile": "90327593",
+      "password": "1234",
+      "id": 10
+    },
+    {
+      "name": "joel",
+      "email": "joel@mail.com",
+      "mobile": "5515646",
+      "password": "123",
+      "id": 11
+    },
+    {
+      "name": "Satya",
+      "email": "sj@gmail.com",
+      "mobile": "64856486",
+      "password": "123",
+      "id": 12
+    }
+  ],
+  "association": [
+    {
+      "name": "Alan",
+      "no": "22222",
+      "date": "2024-04-04",
+      "role": "Collaborative",
+      "type": "International",
+      "id": 1
+    },
+    {
+      "name": "Alan",
+      "no": "22222",
+      "date": "2024-04-04",
+      "role": "Collaborative",
+      "type": "International",
+      "id": 2
+    },
+    {
+      "name": "Alan",
+      "no": "45665153",
+      "date": "2024-05-31",
+      "role": "Collaborative",
+      "type": "Institutional",
+      "proof": "C:\\fakepath\\christ3.jpg",
+      "id": 3
+    },
+    {
+      "name": "Alan",
+      "no": "45665153",
+      "date": "2024-05-31",
+      "role": "Collaborative",
+      "type": "Institutional",
+      "proof": "C:\\fakepath\\christ3.jpg",
+      "id": 4
+    },
+    {
+      "name": "Alan",
+      "no": "45665153",
+      "date": "2022-09-10",
+      "role": "Collaborative",
+      "type": "Institutional",
+      "proof": "C:\\fakepath\\exp3.c",
+      "id": 5
+    },
+    {
+      "name": "OPTIMA",
+      "no": "2062069",
+      "date": "2022-09-14",
+      "role": "Collaborative",
+      "type": "Institutional",
+      "proof": "C:\\fakepath\\user.png",
+      "id": 6
+    }
+  ],
+  "edu": [
+    {
+      "names": "Alan",
+      "spec": "qw",
+      "ins": "dsdsd",
+      "year": "2022-09-03",
+      "uni": "fsfsf",
+      "perc": 12,
+      "id": 1
+    },
+    {
+      "names": "Satyajeet",
+      "spec": "AIML",
+      "ins": "Christ",
+      "year": "2023-04-14",
+      "uni": "Uni",
+      "perc": 89,
+      "id": 2
+    },
+    {
+      "names": "Alan",
+      "spec": "dsgsdfg",
+      "ins": "Christ",
+      "year": "2022-09-24",
+      "uni": "Christ",
+      "perc": 11,
+      "id": 3
+    },
+    {
+      "names": "B.tech",
+      "spec": "AIML",
+      "ins": "Christ",
+      "year": "2022-09-23",
+      "uni": "Christ",
+      "perc": 70,
+      "id": 4
+    }
+  ],
+  "innovation": [
+    {
+      "name": "",
+      "pro": "",
+      "ideas": "",
+      "bud": "",
+      "year1": "",
+      "year2": "",
+      "team": "",
+      "id": 1
+    }
+  ],
+  "responsibility": [
+    {
+      "resp": "vfvf",
+      "top": "dsvfv",
+      "date1": "2022-09-01",
+      "date2": "2022-09-16",
+      "rem": null,
+      "proof": null,
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

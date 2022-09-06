@@ -1,0 +1,66 @@
+<!-- 
+<div class="container" id="cont">
+    <div class="row">
+         <div class="col-md-6">
+            <div class=" card">
+               <div class="text-center">
+                   <h1>Faculty Signup</h1>
+                   <h5>Feel Free to Signup</h5><hr>
+               </div>
+               <form [formGroup]="signupForm" (ngSubmit)="signUp()"> 
+                   <div class="mb-3">
+                     <label class="form-label">Name</label>
+                     <input formControlName="name" placeholder="Enter Name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   </div>
+                   <div class="mb-3">
+                    <label class="form-label">Mobile Number</label>
+                    <input formControlName="mobile" placeholder="Enter Mobile Number " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input formControlName="email" placeholder="Enter Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                   <div class="mb-3">
+                     <label class="form-label">Password</label>
+                     <input formControlName="password" placeholder="Enter Password"type="password" class="form-control" id="exampleInputPassword1">
+                   </div>
+                   <button type="submit" class="btn btn-primary">Signup</button>
+                 </form> 
+                 <a href=# routerLink="/login">New User? Click to Signup!</a>
+           </div>
+       </div>
+   </div>
+<div> -->
+
+
+  <body>
+    <div class="main">
+        <img src="assets\christ3.jpg" alt="Christ Logo" class="logo img-responsive"><br>
+        <h1>Faculty Login</h1>
+        <hr>
+        <div class="login-wrapper">
+            <div class="card">
+                <div class="card-body">
+        <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+          
+            <label class="form-label">Name</label>
+            <input formControlName="name" placeholder="Enter Name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         
+           <label class="form-label">Mobile Number</label>
+           <input formControlName="mobile" placeholder="Enter Mobile Number " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+           <label for="exampleInputEmail1" class="form-label">Email address</label>
+           <input formControlName="email" placeholder="Enter Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        
+            <label class="form-label">Password</label>
+            <input formControlName="password" placeholder="Enter Password"type="password" class="form-control" id="exampleInputPassword1">
+            <button type="submit" class="btn btn-primary">Signup</button><br>
+            <a href=# routerLink="/login">Already have an account? Click to Login!</a>
+            </form>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+

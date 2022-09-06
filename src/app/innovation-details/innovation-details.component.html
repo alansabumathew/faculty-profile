@@ -1,0 +1,88 @@
+<div class="sidebar">
+  <a routerLink="/dashboard" routerLinkActive="active" >Home</a>
+  <a routerLink="/association" routerLinkActive="active">Association</a>
+  <a routerLink="/educational-details" routerLinkActive="active"s>Educational Details</a>
+  <a class="fac" routerLink="/innovation-details" routerLinkActive="active">Innovation Details</a>
+  <a routerLink="/responsibility" routerLinkActive="active">Roles & Responsibilities</a>
+</div>
+
+
+  <div class="main">
+      <div class="align">
+          <form [formGroup]="inn" class="border p-3 rounded mt-5">
+              <div class="row g-0">
+                  <div class="col text-center p-2 mb-3 bg-light rounded">
+                      <span class="fs-4">Innovation & Startup</span>
+        
+                  </div>
+              </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="topic" class="form-label">Name of the Start Up</label>
+              <input type="text" class="form-control" id="name"formControlName="name" ><br>
+              <span class="text-danger" *ngIf="inn.controls['name'].dirty && inn.hasError('required','name')">*Name is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="mobile" class="form-label">Problem Statement</label>
+              <input type="text" class="form-control" id="pro" formControlName="pro"><br>
+              <span class="text-danger" *ngIf="inn.controls['pro'].dirty && inn.hasError('required','pro')">*Problem statement is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="ins" class="form-label">Ideas</label>
+              <input type="text" class="form-control" id="ideas" formControlName="ideas"><br>
+              <span class="text-danger" *ngIf="inn.controls['ideas'].dirty && inn.hasError('required','ideas')">*Ideas is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="uni" class="form-label">Budget Required</label>
+              <input type="text" class="form-control" id="bud" formControlName="bud"><br>
+              <span class="text-danger" *ngIf="inn.controls['bud'].dirty && inn.hasError('required','bud')">*Budget is required</span>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col mb-3">
+                <label for="uni" class="form-label">Duration of Project</label>
+          </div>
+    
+        <div class="row">
+          <div class="col mb-3">
+              <label for="year" class="form-label">From</label>
+              <input type="date" class="form-control" id="year" formControlName="year1">
+          </div>
+          <div class="col mb-3">
+            <label for="year" class="form-label">To</label>
+            <input type="date" class="form-control" id="year" formControlName="year2">
+        </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col mb-3">
+                <label for="perc" class="form-label">Team Details</label>
+                <input type="number" class="form-control" id="team" formControlName="team"><br>
+                <span class="text-danger" *ngIf="inn.controls['team'].dirty && inn.hasError('required','team')">*Team is required</span>
+            </div>
+          </div>
+      
+         
+          <br>
+          <div class="row">
+            <div class="col mb-3">
+              
+                <input class="btn1" type="submit" (click)="postInn()" >
+            </div>
+     
+        </div>
+              </form>
+        </div>
+  </div>
+  

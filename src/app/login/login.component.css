@@ -1,0 +1,76 @@
+body{
+    
+    background-color: #FFEEEE;
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 1080px; */
+
+}
+
+.main{
+    padding:  10px 50px 50px 50px;
+    text-align: center;
+    background-color: white;
+    margin: 50px auto;
+    width: 45%;
+    height: 40%;
+
+    border-radius: 14px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+div .logo{
+    
+    width: 50%;
+    height: 20%;
+}
+
+h1{
+    margin-top: 10px;
+}
+
+.form-control{
+    padding-top: 50px;
+}
+
+.form-control label{
+    margin-right: 20px;
+}
+
+.form-control input{
+    width: 50%;
+    height: 30px;
+}
+
+.form-control a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.form-control a:hover{
+    color: #21d8ec;
+    font-weight: 600;
+}
+
+button{
+    background-color: #30a5b3;
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    padding:  10px 40px; 
+}
+
+button:hover{
+    background-color: #334e86;
+}
+/* 
+.card{
+    margin-top: 15px;
+    border: 1px solid blue;
+    width: 550px;
+    padding: 45px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+
+} */

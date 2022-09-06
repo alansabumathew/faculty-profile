@@ -1,0 +1,79 @@
+<div class="sidebar">
+  <a routerLink="/dashboard" routerLinkActive="active" >Home</a>
+  <a routerLink="/association" routerLinkActive="active">Association</a>
+  <a class="fac" routerLink="/educational-details" routerLinkActive="active"s>Educational Details</a>
+  <a routerLink="/innovation-details" routerLinkActive="active">Innovation Details</a>
+  <a routerLink="/responsibility" routerLinkActive="active">Roles & Responsibilities</a>
+</div>
+
+  <div class="main">
+      <div class="align">
+          <form [formGroup]="edu" class="border p-3 rounded mt-5">
+              <div class="row g-0">
+                  <div class="col text-center p-2 mb-3 bg-light rounded">
+                      <span class="fs-4">Educational Details</span>
+        
+                  </div>
+              </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="topic" class="form-label">Name of the degree</label>
+              <input type="text" class="form-control" id="names" formControlName="names" ><br>
+              <span class="text-danger" *ngIf="edu.controls['names'].dirty && edu.hasError('required','names')">*Name is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="mobile" class="form-label">Specialization</label>
+              <input type="text" class="form-control" id="spec" formControlName="spec"><br>
+              <span class="text-danger" *ngIf="edu.controls['spec'].dirty && edu.hasError('required','spec')">*Specialization is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="ins" class="form-label">Institution</label>
+              <input type="text" class="form-control" id="ins" formControlName="ins"><br>
+              <span class="text-danger" *ngIf="edu.controls['ins'].dirty && edu.hasError('required','ins')">*Institution name is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="uni" class="form-label">University</label>
+              <input type="text" class="form-control" id="uni" formControlName="uni"><br>
+              <span class="text-danger" *ngIf="edu.controls['uni'].dirty && edu.hasError('required','uni')">*University is required</span>
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="col mb-3">
+              <label for="year" class="form-label">Year of passing</label>
+              <input type="date" class="form-control" id="year" formControlName="year">
+              <span class="text-danger" *ngIf="edu.controls['year'].dirty && edu.hasError('required','year')">*University is required</span>
+          </div>
+        </div>
+        
+        <div class="row">
+            <div class="col mb-3">
+                <label for="perc" class="form-label">Percentage</label>
+                <input type="number" class="form-control" id="perc" formControlName="perc"><br>
+                <span class="text-danger" *ngIf="edu.controls['perc'].dirty && edu.hasError('required','perc')">*Percentage is required</span>
+            </div>
+          </div>
+      
+         
+          <br>
+          <div class="row">
+            <div class="col mb-3">
+              
+                <input class="btn1" type="submit" (click)="postEdu()" [disabled]="!edu.valid">
+            </div>
+     
+        </div>
+              </form>
+        </div>
+  </div>
+  

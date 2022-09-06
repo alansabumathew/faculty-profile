@@ -1,0 +1,67 @@
+<div class="sidebar">
+  <a routerLink="/dashboard" routerLinkActive="active" >Home</a>
+  <a routerLink="/association" routerLinkActive="active">Association</a>
+  <a routerLink="/educational-details" routerLinkActive="active"s>Educational Details</a>
+  <a routerLink="/innovation-details" routerLinkActive="active">Innovation Details</a>
+  <a class="fac" routerLink="/responsibility" routerLinkActive="active">Roles & Responsibilities</a>
+</div> 
+
+ <div class="main">
+      <div class="align">
+          <form [formGroup]="res" class="border p-3 rounded mt-5">
+              <div class="row g-0">
+                  <div class="col text-center p-2 mb-3 bg-light rounded">
+                      <span class="fs-4">Roles & Responsibility</span>
+        
+                  </div>
+              </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="topic" class="form-label">Nature of Responsibility</label>
+              <input type="text" class="form-control" id="resp"formControlName="resp" ><br>
+              <span class="text-danger" *ngIf="res.controls['resp'].dirty && res.hasError('required','resp')">*Nature of Responsibility is required</span>
+          </div>
+    
+        </div>
+        
+        <div class="row">
+          <div class="col mb-3">
+              <label for="mobile" class="form-label">Assigned Topic</label>
+              <input type="text" class="form-control" id="top" formControlName="top"><br>
+              <span class="text-danger" *ngIf="res.controls['top'].dirty && res.hasError('required','top')">*Topic is required</span>
+          </div>
+        </div>
+        
+          <div class="row">
+              <div class="col mb-3">
+                  <label for="start-date" class="form-label">Start Date</label>
+                      <input type="date" class="form-control" id="start-date" formControlName="date1">
+              </div> <br>
+              <div class="col mb-3">
+                <label for="end-date" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="end-date" formControlName="date2">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col mb-3">
+                <label for="mobile" class="form-label">remark</label>
+                <input type="text" class="form-control" id="rem" formControlName="rem"><br>
+                <span class="text-danger" *ngIf="res.controls['dept'].dirty && res.hasError('required','rem')">*Remark is required</span>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col mb-3">
+                <label for="pwd" class="form-label">Document Proof</label>
+                <br>
+                <input type="file" id="myFile" name="filename" formControlName="proof">
+                <input class="btn1" type="reset">
+            </div>
+            <input class="btn1" type="submit" (click)="postRes()">
+        </div>
+              </form>
+        </div>
+  </div>
+  

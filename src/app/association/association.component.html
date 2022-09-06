@@ -1,0 +1,86 @@
+<div class="sidebar">
+  <a routerLink="/dashboard" routerLinkActive="active">Home</a>
+  <a class="fac" routerLink="/association" routerLinkActive="active">Association</a>
+  <a routerLink="/educational-details" routerLinkActive="active" s>Educational Details</a>
+  <a routerLink="/innovation-details" routerLinkActive="active">Innovation Details</a>
+  <a routerLink="/responsibility" routerLinkActive="active">Roles & Responsibilities</a>
+</div>
+
+<div class="main">
+  <div class="align">
+    <form [formGroup]="association"  class="border p-3 rounded mt-5">
+      <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light rounded">
+          <span class="fs-4">Association & Membership</span>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="topic" class="form-label">Membership Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name"><br>
+          <span class="text-danger"
+            *ngIf="association.controls['name'].dirty && association.hasError('required','name')">*Name of Research
+            project is required</span>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="no" class="form-label">Membership Number</label>
+          <input type="text" class="form-control" id="no" formControlName="no">
+        </div><br>
+        <span class="text-danger"
+          *ngIf="association.controls['no'].dirty && association.hasError('required','no')">*Membership Number is
+          required</span>
+      </div>
+
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="date" class="form-label">Date of Registration</label>
+          <input type="date" class="form-control" id="date" formControlName="date">
+          <span class="text-danger"
+            *ngIf="association.controls['date'].dirty && association.hasError('required','date')">*Membership Number is
+            required</span>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col mb-3">
+          <label for="amount" class="form-label">Role</label>
+          <br>
+          <select class="align-1" formControlName="role">
+            <option value="Sole">Sole</option>
+            <option value="Collaborative">Collaborative</option>
+            <option value="Departmental">Departmental</option>
+            <option value="Institutional">Institutional</option>
+          </select>
+        </div>
+        <div class="col mb-3">
+          <label for="amount" class="form-label">Type</label>
+          <br>
+          <select class="align-1" formControlName="type">
+            <option value="Institutional">Institutional</option>
+            <option value="Regional">Regional</option>
+            <option value="National">National</option>
+            <option value="International">International</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col mb-3">
+          <label for="pwd" class="form-label">Document Proof</label>
+          <br>
+          <input type="file" id="myFile" name="filename" formControlName="proof">
+          <input class="btn1" type="submit" (click)="postAssociation()" [disabled]="!association.valid">
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>

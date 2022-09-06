@@ -1,0 +1,129 @@
+<div class="sidebar">
+    <a class="fac" routerLink="/dashboard" routerLinkActive="active" >Home</a>
+    <a routerLink="/association" routerLinkActive="active">Association</a>
+    <a routerLink="/educational-details" routerLinkActive="active"s>Educational Details</a>
+    <a routerLink="/innovation-details" routerLinkActive="active">Innovation Details</a>
+    <a routerLink="/responsibility" routerLinkActive="active">Roles & Responsibilities</a>
+  </div>
+
+<div class="main">
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+            <h2>Welcome to Faculty Profile</h2>
+            <div class="d-flex">
+                <button (click)="clickAddFacu()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+                    Education</button>
+                    <button routerLink="/login" class="btn btn-danger mx-3">Log out</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="para" class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <img src="https://cdn-icons-png.flaticon.com/512/57/57073.png" class="rounded float-left"
+                alt="Responsive image">
+            <h1 class="display-5 fw-bold">Educational Qualification</h1>
+            <p class="col-md-8 fs-4">To enter the Educational qualification of faculties</p>
+
+        </div>
+    </div>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th scope="col">Sl.No</th>
+                <th scope="col">Degree(Branch)</th>
+                <th scope="col">Board/University</th>
+                <th scope="col">Passing Year</th>
+                <th scope="col">Result Class</th>
+                <th col="col">Specialization</th>
+                <!-- <th scope="col">Verification</th>
+                <th scope="col">Docs</th> -->
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of allFacultyData">
+                <td>{{data.id}}</td>
+                <td>{{data.degree}}</td>
+                <td>{{data.board}}</td>
+                <td>{{data.year}}</td>
+                <td>{{data.result}}</td>
+                <td>{{data.spec}}</td>
+                <!-- <td>
+                    <button class="btn btn-danger">Pending</button>
+                </td>
+                <td>
+                    <button class="btn btn-success">Submited</button>
+                </td> -->
+                <td>
+                    <button (click)="onEditFacu(data)" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>&nbsp;
+                    <button class="btn btn-danger" (click)="deleteFacu(data)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Education Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" type="close">&times;</span>
+                </button>
+                
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+
+                    <div>
+                        <label for="degree">Degree(Branch)</label>
+                        <input type="text" formControlName="degree" class="form-control" id="degree"
+                            aria-describedby="emailHelp" placeholder="Enter Degree">
+                    </div>
+
+                    <div>
+                        <label for="board">Board/University</label>
+                        <input type="text" formControlName="board" class="form-control" id="board"
+                            aria-describedby="emailHelp" placeholder="Enter Board">
+                    </div>
+                   
+                    <div>
+                        <label for="year">Passing Year</label>
+                        <input type="text" formControlName="year" class="form-control" id="year"
+                            aria-describedby="emailHelp" placeholder="Enter Passing Year">
+                    </div>
+
+                    <div>
+                        <label for="result">Result Class</label>
+                        <input type="text" formControlName="result" class="form-control" id="result"
+                            aria-describedby="emailHelp" placeholder="Enter Result">
+                    </div>
+
+                    <div>
+                        <label for="spec">Specialization</label>
+                        <input type="text" formControlName="spec" class="form-control" id="spec"
+                            aria-describedby="emailHelp" placeholder="Enter Specialization">
+                    </div>
+
+
+                    <br>
+                    
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning"  id="clear">Clear</button>
+                <button *ngIf="showAdd" type="button" class="btn btn-primary" (click)="addFacu()">Add Details</button>
+                <button *ngIf="showUpd" type="button" class="btn btn-primary" (click)="updateFacu()">Update Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

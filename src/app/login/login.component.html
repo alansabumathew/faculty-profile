@@ -1,0 +1,25 @@
+<body>
+    <div class="main">
+        <img src="assets\christ3.jpg" alt="Christ Logo" class="logo img-responsive"><br>
+        <h1>Faculty Login</h1>
+        <hr>
+        <div class="login-wrapper">
+            <div class="card">
+                <div class="card-body">
+        <form [formGroup]="loginForm"(ngSubmit)="logIn()">
+            <label for="inputEmail">Email<img src="assets\user.png" width="14px" height="14px"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" id="inputEmail" name="email" class="email" placeholder="Enter Email" required autofocus ngModel><br><br>
+            <label for="inputPassword">Password <img src="assets\password.png" width="17px" height="17px"></label>
+            <input type="password" id="inputPassword" name="password" placeholder="Enter Password" required  ngModel><br><br>
+            <button class="btn-lg btn primary btn-block" type="submit">Sign In</button><br><br>
+            <a style="color: blue; margin-top: 10px;" routerLink="/signup">New User? Click to Signup!</a>
+            </form>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+
+
